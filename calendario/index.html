@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <header>
+            <h1>Calendario</h1>
+            <h3>Informe o número do mês</h3>
+        </header>
+
+        <main>
+            <fieldset>
+                <div class="campo">
+                    <label for="textbox1">Digite o numero do mês</label>
+                    <input type="text" id="textboxNum" class="textbox" name="textbox" placeholder="Digite o numero do mês"/>
+                </div>
+
+                <div class="campo">
+                    <label for="textbox2">Nome do mês de acordo com o numero</label>
+                    <input type="text" id="textboxExtenso" class="textbox" name="textbox" placeholder="Nome do mês de acordo" disabled/>
+                </div>
+
+                <div class="campo">
+                    <input type="button" id="mostrar" class="button" onclick="Mostrar()" value="Mostrar"/> 
+                </div>
+
+                <div class="campo">
+                    <input type="reset" id="limpar" class="button" onclick="Limpar()" value="Limpar"/>
+                </div>
+
+            </fieldset>
+        </main>
+    </form>
+
+    <script src="/script.js"></script>
+</body>
+</html>
